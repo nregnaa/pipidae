@@ -17,7 +17,7 @@ public abstract class Title{
     //Evaluates what needs or orders are more important, then returns the action.
     //Needs denote things such as hunger/thirst.
     //Orders denote given commands from other units.
-    protected void unitDecision(List<Need> needs, List<Orders> orders){
+    protected void unitDecision(List<Need> needs, List<Order> orders){
         //
     }
 
@@ -25,31 +25,31 @@ public abstract class Title{
     protected void performAction(Action action){
         //
     }
-    
+
     public String getName(){
         return name;
     }
-    
+
     public TitleRank getTitle(){
         return title;
     }
-    
+
     public int getAge(){
         return age;
     }
-    
+
     public int getHealth(){
         return health;
     }
-    
+
     public void setAge(int age){
         this.age=age;
     }
-    
+
     public void setHealth(int health){
         this.health=health;
     }
-    
+
     private String name;
     private TitleRank title;
     private int age;
