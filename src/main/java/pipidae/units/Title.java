@@ -7,7 +7,7 @@ public abstract class Title{
         this.age=age;
         this.health=health;
     }
-    public void update(List<Needs> needs, List<Orders> orders){
+    public void update(List<Need> needs, List<Order> orders){
         Action action = unitDecision(needs, orders);
         performAction(action);
     }
