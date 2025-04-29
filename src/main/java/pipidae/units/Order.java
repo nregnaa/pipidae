@@ -14,7 +14,7 @@ public class Order{
     };
     
     //rank of the order dictates how important it is. The variable derives from the rank of its issuer.
+    //Need.urgency equivalent.
     private TitleRank orderRank;
-    //what action they're supposed to do.
     private Action action;
 };
