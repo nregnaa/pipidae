@@ -1,4 +1,4 @@
-package pipidae.units;
+package idk.pipidae.units;
 
 public abstract class Title{
     public Title(String name, TitleRank title, int age, int health){

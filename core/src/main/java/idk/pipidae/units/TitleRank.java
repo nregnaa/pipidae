@@ -1,3 +1,4 @@
+package idk.pipidae.units;
 
 public enum TitleRank{
     PEASENT(0), KNIGHT(1), BARON(2), COUNT(3), DUKE(4), KING(5);

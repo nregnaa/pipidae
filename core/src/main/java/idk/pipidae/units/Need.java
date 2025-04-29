@@ -1,3 +1,4 @@
+package idk.pipidae.units;
 
 public class Need{
     public Need(int urgency){
