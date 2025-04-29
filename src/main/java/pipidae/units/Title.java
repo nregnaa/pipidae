@@ -1,17 +1,17 @@
 package pipidae.units;
 
 public abstract class Title{
-    public Title(String name, String title, int age, int health){
+    public Title(String name, TitleRank title, int age, int health){
         this.name=name;
         this.title=title;
         this.age=age;
         this.health=health;
     }
-    public void update(List<> needs, List<> orders){
+    public void update(List<Needs> needs, List<Orders> orders){
         Action action = unitDecision(needs, orders);
         performAction(action);
     }
-    protected void unitDecision(List<> needs, List<> orders){
+    protected void unitDecision(List<Needs> needs, List<Orders> orders){
         //
     }
     protected void performAction(){
@@ -20,7 +20,7 @@ public abstract class Title{
     public String getName(){
         return name;
     }
-    public String getTitle(){
+    public TitleRank getTitle(){
         return title;
     }
     public int getAge(){
@@ -36,7 +36,7 @@ public abstract class Title{
         this.health=health;
     }
     private String name;
-    private String title;
+    private TitleRank title;
     private int age;
     private int health;
 }
