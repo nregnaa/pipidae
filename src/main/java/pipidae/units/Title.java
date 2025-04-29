@@ -7,13 +7,14 @@ public abstract class Title{
         this.age=age;
         this.health=health;
     }
-    public void update(List<> ){
-        
+    public void update(List<> needs, List<> orders){
+        Action action = unitDecision(needs, orders);
+        performAction(action);
     }
-    protected void unitDecision(){
+    protected void unitDecision(List<> needs, List<> orders){
         //
     }
-    protected void performDecision(){
+    protected void performAction(){
         //
     }
     public String getName(){
