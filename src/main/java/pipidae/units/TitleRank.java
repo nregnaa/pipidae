@@ -4,11 +4,11 @@ public enum TitleRank{
     
     public TitleRank(int rank){
         this.rank=rank;
-    };
+    }
     
     public void getRank(){
         return rank;
-    };
+    }
     
     private final int rank;
-};
+}
