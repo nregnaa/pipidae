@@ -1,5 +1,7 @@
 package idk.pipidae.units;
 
+import java.util.List;
+
 public abstract class Title{
     public Title(String name, TitleRank title, int age, int health){
         this.name=name;
@@ -17,8 +19,8 @@ public abstract class Title{
     //Evaluates what needs or orders are more important, then returns the action.
     //Needs denote things such as hunger/thirst.
     //Orders denote given commands from other units.
-    protected void unitDecision(List<Need> needs, List<Order> orders){
-        //
+    protected Action unitDecision(List<Need> needs, List<Order> orders){
+        return new Walk();
     }
 
     //Performs an action-
