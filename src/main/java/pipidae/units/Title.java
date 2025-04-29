@@ -15,9 +15,9 @@ public abstract class Title{
     }
 
     //Evaluates what needs or orders are more important, then returns the action.
-    //Needs denotes things such as hunger/thirst.
+    //Needs denote things such as hunger/thirst.
     //Orders denote given commands from other units.
-    protected void unitDecision(List<Needs> needs, List<Orders> orders){
+    protected void unitDecision(List<Need> needs, List<Orders> orders){
         //
     }
 
