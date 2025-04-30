@@ -17,7 +17,7 @@ public class Main extends ApplicationAdapter {
         batch = new SpriteBatch();
         image = new Texture("libgdx.png");
 
-        //
+        // a
     }
 
     @Override
