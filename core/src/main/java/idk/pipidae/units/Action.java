@@ -1,7 +1,7 @@
 package idk.pipidae.units;
 
-public abstract class Action{
-    public Action(){
-        //
-    }
+public interface Action{
+    public void emit(Title receiver);
+    public void tell(Title receiver);
+    public void handle();
 }
