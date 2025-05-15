@@ -2,6 +2,7 @@ package idk.pipidae.units;
 
 import java.util.List;
 
+// TODO: interface tillater ikke protected. Kanskje bruke abstract class?
 interface Title{
     public Title(String name, int rank, int age, int health);
 

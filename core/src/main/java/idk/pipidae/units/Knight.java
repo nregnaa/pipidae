@@ -1,3 +1,4 @@
+package idk.pipidae.units;
 
 public class Knight implements Title{
     public Knight(Title title){

@@ -1,7 +1,7 @@
 package idk.pipidae.units;
 
 public class Need{
-    public Need(int urgency){
+    public Need(int urgency){ // TODO: Skal action også i constructor?
         this.urgency=urgency;
         this.action=action;
     }

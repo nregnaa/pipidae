@@ -1,5 +1,6 @@
+package idk.pipidae.units;
 
-public class Duke implements Baron{
+public class Duke extends Baron{
     public Duke(Baron baron){
         base = baron;
     }

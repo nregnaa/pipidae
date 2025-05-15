@@ -1,3 +1,4 @@
+package idk.pipidae.units;
 
 public class Baron implements Title{
     public Baron(Title title){
