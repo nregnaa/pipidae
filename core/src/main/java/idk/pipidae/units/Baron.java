@@ -1,17 +1,11 @@
 package idk.pipidae.units;
 
-public class Baron implements Title{
+public class Baron extends Knight implements Title{
     public Baron(Title title){
-        base = title;
+        super(title);
     }
 
-    public Title getBase(){
-        return base;
+    public Title demote(){
+        return new Knight(new Lowborn(getName(), getHealth()));
     }
-
-    protected Action unitDecision(List<Need> needs, List<Order> orders);
-
-    protected void performAction(Action action);
-
-    Title base;
 }

@@ -3,17 +3,22 @@ package idk.pipidae.units;
 import java.util.List;
 
 // TODO: interface tillater ikke protected. Kanskje bruke abstract class?
+
+// Gjør bare alt om til public.
+
 interface Title{
-    public Title(String name, int rank, int age, int health);
-
-    public Title demote(Title title);
-
-    public Title getBase();
+    Title demote();
 
     //updates the unit using utility ai model
-    public void update(List<Need> needs, List<Order> orders);
+    void update();
 
-    protected Action unitDecision(List<Need> needs, List<Order> orders);
+    Action unitDecision();
 
-    protected void performAction(Action action);
+    Title getTitle();
+
+    String getName();
+
+    int getHealth();
+
+    List<Action> getActionlist();
 }

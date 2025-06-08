@@ -2,16 +2,32 @@ package idk.pipidae.units;
 
 public class Knight implements Title{
     public Knight(Title title){
-        base = title;
+        this.title = title;
     }
 
-    public Title getBase(){
-        return base;
+    public Title demote(){
+        return new Lowborn(getName(), getHealth());
     }
 
-    public void update(List<Need> needs, List<Order> orders){
-        performAction(unitDecision(needs, orders));
+    public void update(){
+        unitDecision().perform();
     }
 
-    Title base;
+    public Action unitDecision(){
+        return new Walk(this);
+    }
+
+    public String getName(){
+        return title.getName;
+    }
+
+    public int getHealth(){
+        return title.getHealth;
+    }
+
+    public List<Action> getActionlist(){
+        return title.getActionlist();
+    }
+
+    protected final Title title;
 }

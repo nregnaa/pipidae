@@ -1,17 +1,11 @@
 package idk.pipidae.units;
 
 public class Duke extends Baron{
-    public Duke(Baron baron){
-        base = baron;
+    public Duke(Title title){
+        super(title);
     }
 
-    public Baron getBase(){
-        return base;
+    public Title demote(){
+        return new Baron(new Lowborn(getName(), getHealth()));
     }
-
-    protected Action unitDecision(List<Need> needs, List<Order> orders);
-
-    protected void performAction(Action action);
-
-    private Baron base;
 }

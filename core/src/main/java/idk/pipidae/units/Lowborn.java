@@ -8,18 +8,32 @@ public class Lowborn implements Title{
         this.health = health;
     }
 
-    public Title getBase(){
+    public Title demote(){
         return null;
     }
 
-    public void update(List<Need> needs, List<Order> orders){
-        performAction(unitDecision(needs, orders));
+    public void update(){
+        unitDecision().perform();
     }
 
-    protected Action unitDecision(List<Need> needs, List<Order> orders);
+    // TODO: Lag en egen behaviour class/ai for unitDecision.
+    public Action unitDecision(){
+        return new Walk(this);
+    }
 
-    protected void performAction(Action action);
+    public String getName(){
+        return name;
+    }
+
+    public int getHealth(){
+        return health;
+    }
+
+    public List<Action> getActionlist(){
+        return actionlist;
+    }
 
     private String name;
     private int health;
+    private List<Action> actionlist;
 }
